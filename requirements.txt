@@ -3,3 +3,5 @@ websocket-client==1.2.1
 simplejson
 pause
 rich
+tensorflow
+sklearn

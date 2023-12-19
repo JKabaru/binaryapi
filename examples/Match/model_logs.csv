@@ -1,0 +1,6 @@
+Model,Accuracy,Parameters
+Best Random Forest,0.6633663366336634,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 2, 'n_estimators': 50}"
+Best Random Forest,0.6194029850746269,"{'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 2, 'n_estimators': 50}"
+Best Random Forest,0.6486486486486487,"{'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 50}"
+Best Random Forest,0.5945945945945946,"{'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 150}"
+Best Random Forest,0.7027027027027027,"{'max_depth': None, 'min_samples_leaf': 4, 'min_samples_split': 2, 'n_estimators': 50}"

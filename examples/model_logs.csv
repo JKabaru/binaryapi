@@ -1,0 +1,2 @@
+Model,Accuracy,F1_score,Parameters
+Best Random Forest,0.6764705882352942,0.717948717948718,"{'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 50}"

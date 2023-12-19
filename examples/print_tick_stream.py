@@ -7,7 +7,7 @@ from rich.console import Console
 from binaryapi.stable_api import Binary
 
 # Binary Token
-token = os.environ.get('BINARY_TOKEN', '<YOUR BINARY TOKEN GOES HERE>')
+token = os.environ.get('BINARY_TOKEN', 'NGysXImgLMM9Qzv')
 
 console = Console(log_path=False)
 
@@ -15,9 +15,9 @@ console = Console(log_path=False)
 def message_handler(message):
     msg_type = message.get('msg_type')
 
-    if msg_type == 'tick':
+    if msg_type == 'candle':
         # Print tick data from message
-        tick_data = message['tick']
+        tick_data = message['candle']
         # console.print(tick_data)
         dt = datetime.fromtimestamp(tick_data['epoch'])
         console.print('{}: {} -> {}'.format(dt, tick_data['symbol'], tick_data['quote']))

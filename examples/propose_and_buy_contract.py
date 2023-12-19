@@ -9,7 +9,7 @@ from binaryapi.exceptions import MessageByReqIDNotFound
 from binaryapi.stable_api import Binary
 
 # Binary Token
-token = os.environ.get('BINARY_TOKEN', '<YOUR BINARY TOKEN GOES HERE>')
+token = os.environ.get('BINARY_TOKEN', 'NGysXImgLMM9Qzv')
 
 console = Console(log_path=False)
 
@@ -30,8 +30,8 @@ def propose_and_buy(binary: Binary):
     account_currency = binary.api.profile.currency
 
     basis = PROPOSAL_BASIS.STAKE
-    amount = 5
-    symbol = 'R_75'
+    amount = 0.35
+    symbol = 'R_100'
     duration = 5
     duration_unit = DURATION.TICK
     min_payout_pct = 0  # Minimum Payout %

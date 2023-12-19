@@ -7,7 +7,7 @@ from rich.console import Console
 from binaryapi.stable_api import Binary
 
 # Binary Token
-token = os.environ.get('BINARY_TOKEN', '<YOUR BINARY TOKEN GOES HERE>')
+token = os.environ.get('BINARY_TOKEN', 'NGysXImgLMM9Qzv')
 
 console = Console(log_path=False)
 
@@ -30,9 +30,9 @@ if __name__ == '__main__':
     console.log('Logged in')
 
     symbol = 'R_100'
-    style = 'ticks'  # 'ticks' or 'candles'
+    style = 'candles'  # 'ticks' or 'candles'
     end = 'latest'  # 'latest' or unix epoch
-    count = 10  # default: 5000 if not provided
+    count = 5  # default: 5000 if not provided
 
     # Subscribe to ticks stream
     binary.api.ticks_history(
